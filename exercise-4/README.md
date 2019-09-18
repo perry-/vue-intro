@@ -90,7 +90,12 @@ In the previous exercise, we added `props` to the ToDoItem component.
 Import ToDoList in App.vue in the same way as you imported ToDoItem in ToDoList (as in the example above).
 
 ## Define a list of TODO items in App.vue
-:pencil2: Add a new field in the `data` entry in App.vue. You can call it whatever you want, but if you're out of ideas, we suggest `toDoList` (naming things is hard!). Use that field as a value for the `list` prop on the ToDoList component. The result should be a list that's sent from App.vue into ToDoList.
+:pencil2: Add a new field in the `data` entry in App.vue. You can call it whatever you want, but if you're out of ideas, we suggest `toDoList` (naming things is hard!). Use that field as a value for the `list` prop on the ToDoList component. The result should be a list that's sent from App.vue into ToDoList. In order to send a list into `list`, it will need to be written like this (with a colon):
+
+```html
+<ToDoList :list="toDoList" />
+```
+
 
 Tip: If you want to verify that the `list` prop is actually sent into ToDoList, you can modify the template in the ToDoList component and print out your list prop like this:
 
