@@ -48,8 +48,6 @@ Notice that props with names in camelCase (with uppercase letters) must be used 
 ## Populate todo item with text
 We will use props for ToDoItem in place of slots. 
 
-:pencil2: Remove the slot code from ToDoItem.
-
 :pencil2: In the component `ToDoItem`, add props below name: 'ToDoItem'
 
 It should look like this:
